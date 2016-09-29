@@ -1,0 +1,19 @@
+<launch> 
+
+	<node pkg="image_view" type="image_saver" name="fram_extractor" args="image:=/FLUENCE/front/right/color/image_raw" /> 
+
+	<node pkg="rosbag" type="play" name="rosbag" args="--clock /media/michele/TOSHIBA/Nantes_city_centre_dataset/2016-04-12-10-32-05.bag"/> 
+
+	<param name="filename_format" value="Image%05d.png" />
+
+	<param name="save_all_image" value="true" />
+
+	<!-- /media/michele/SAMSUNG/bagfiles/Nantes_city_centre_dataset/2016-04-12-10-32-05.bag -->
+
+	<!-- /media/michele/SAMSUNG/bagfiles/Nantes_city_centre_dataset/2016-04-12-10-51-24.bag -->
+
+	<!-- /media/michele/SAMSUNG/bagfiles/Nantes_city_centre_dataset/2016-04-12-11-06-56.bag -->
+
+	<!-- /media/michele/TOSHIBA/Nantes_city_centre_dataset/2016-04-12-10-32-05.bag -->
+
+</launch>

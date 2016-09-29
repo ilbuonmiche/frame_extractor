@@ -1,0 +1,6 @@
+<launch>
+  <machine name="michele" address="127.0.0.1" ros-root="$(env ROS_ROOT)" env-loader="/opt/ros/jade/env.sh" user="michele" />
+  <machine name="icars_michele" address="192.168.56.101" env-loader="/opt/ros/indigo/env.sh" user="user" />
+
+  <node machine="icars_michele" name="footalker" pkg="test_ros" type="talker.py" />
+</launch>
