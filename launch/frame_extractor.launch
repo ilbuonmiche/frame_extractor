@@ -1,8 +1,8 @@
 <launch> 
 
-	<node pkg="frame_extractor" type="frame_extractor_node" name="fram_extractor" /> 
+	<node pkg="frame_extractor" type="frame_extractor_node" name="frame_extractor" output="screen" /> 
 
-	<node pkg="rosbag" type="play" name="rosbag" args="--clock /media/michele/TOSHIBA\ EXT/Nantes_city_centre_dataset/2016-04-12-10-32-05.bag"/> 
+	<node pkg="rosbag" type="play" name="rosbag" args="--clock /media/michele/TOSHIBA\ EXT1/Nantes_city_centre_dataset/cloudy/2016-05-13-10-25-51.bag" /> 
 
 	<!-- /media/michele/SAMSUNG/bagfiles/Nantes_city_centre_dataset/2016-04-12-10-32-05.bag -->
 
@@ -10,6 +10,14 @@
 
 	<!-- /media/michele/SAMSUNG/bagfiles/Nantes_city_centre_dataset/2016-04-12-11-06-56.bag -->
 
-	<!-- /media/michele/TOSHIBA/Nantes_city_centre_dataset/2016-04-12-10-32-05.bag -->
+	<!-- /media/michele/SAMSUNG/bagfiles/Nantes_city_centre_dataset/2016-05-03-10-48-18.bag -->
+
+	<!-- /media/michele/SAMSUNG/bagfiles/Nantes_city_centre_dataset/2016-05-03-10-35-05.bag --> 
+
+	<!-- /media/michele/SAMSUNG/bagfiles/Nantes_city_centre_dataset/2016-05-13-10-13-51.bag --> 
+
+	<!-- /media/michele/SAMSUNG1/bagfiles/Nantes_city_centre_dataset/2016-05-13-10-25-51.bag --> 
+
+	<!-- /media/michele/TOSHIBA/Nantes_city_centre_dataset/bag_file.bag -->
 
 </launch>

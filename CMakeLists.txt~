@@ -140,7 +140,7 @@ include_directories(
 add_executable(frame_extractor_node src/main.cpp)
 add_executable(frame_gps_extractor_node src/main+gps.cpp)
 add_executable(frame_gps_odom_extractor_node src/main+gps+odom.cpp)
-add_executable(frame_gps_odom_sync_extractor_node src/main+gps+odom+sync.cpp)
+add_executable(frame_gps_odom_sync_extractor_node src/main+gps+odom_sync.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above

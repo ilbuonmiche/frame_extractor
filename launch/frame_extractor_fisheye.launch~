@@ -1,11 +1,10 @@
 <launch> 
 
-	<node pkg="frame_extractor" type="frame_gps_extractor_node" name="fram_gps_extractor" /> 
+	<node pkg="frame_extractor" type="frame_gps_odom_sync_extractor_node" name="frame_gps_odom_sync_extractor" /> 
 
 	<include file="$(find icars_undistortion_color)/launch/icars_undistortion_color_mine.launch" />
 
-	<node pkg="rosbag" type="play" name="rosbag" args="--clock /media/michele/TOSHIBA/Nantes_city_centre_dataset/2016-04-12-11-06-56.bag"/> 
-
+	<node pkg="rosbag" type="play" name="rosbag" args="--clock /media/michele/SAMSUNG1/bagfiles/Nantes_city_centre_dataset/2016-05-03-10-35-05.bag"/> 
 
 	<!-- /media/michele/SAMSUNG/bagfiles/Nantes_city_centre_dataset/2016-04-12-10-32-05.bag -->
 

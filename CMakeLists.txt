@@ -137,10 +137,7 @@ include_directories(
 # add_dependencies(frame_extractor ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
-add_executable(frame_extractor_node src/main.cpp)
-add_executable(frame_gps_extractor_node src/main+gps.cpp)
-add_executable(frame_gps_odom_extractor_node src/main+gps+odom.cpp)
-add_executable(frame_gps_odom_sync_extractor_node src/main+gps+odom_sync.cpp)
+add_executable(frame_extractor_node src/frame_extractor.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
@@ -148,22 +145,6 @@ add_executable(frame_gps_odom_sync_extractor_node src/main+gps+odom_sync.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(frame_extractor_node
-  ${catkin_LIBRARIES}
-  ${OpenCV_LIBRARIES}
-)
-
-
-target_link_libraries(frame_gps_extractor_node
-  ${catkin_LIBRARIES}
-  ${OpenCV_LIBRARIES}
-)
-
-target_link_libraries(frame_gps_odom_extractor_node
-  ${catkin_LIBRARIES}
-  ${OpenCV_LIBRARIES}
-)
-
-target_link_libraries(frame_gps_odom_sync_extractor_node
   ${catkin_LIBRARIES}
   ${OpenCV_LIBRARIES}
 )
